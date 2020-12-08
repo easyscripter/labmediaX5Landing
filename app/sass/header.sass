@@ -1,0 +1,45 @@
+.header 
+    .logo
+        @include inline($logo)
+        margin-top: 42px
+        
+    &_text
+        margin-top: 60px
+        font-family: $extraBold
+        font-size: 1em
+        .title
+            color: $orange
+        p
+            text-align: center
+            background: linear-gradient(263.5deg, #594C97 44.25%, #292537 79.28%)
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+    &_description
+        margin-top: 120px
+        font-family: $regular
+        
+        .description_image
+            
+            img 
+                max-width: 100%
+        .description_text, .description_text_2
+            font-size: 22px
+            &_2
+                margin-top: 15px
+        .reminder
+            &_block
+                margin-top: 50px
+                a
+                    position: relative
+                    display: inline-block
+                    margin-top: 15px
+                    padding: 6px 47px 6px 25px
+                    background-color: rgba(255, 98, 0, 0.1)
+                    color: $orange
+                    text-decoration: none
+                    .link_icon
+                        @include inline($download_icon)
+                        position: absolute
+                        top: 50%
+                        right: 20px
+                        transform: translateY(-50%)
